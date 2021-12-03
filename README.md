@@ -1,5 +1,5 @@
 # Service poller
-
+The content of frontend folder is in this repo: https://github.com/Marharyta20/service_poller_kry_1
 ## Build
 For building application you should run next command lines
 mvn clean install
