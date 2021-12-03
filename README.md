@@ -33,7 +33,7 @@ Use this script to create user and grant permissions
 create user 'dev'@'%' identified by 'secret';
 
 ## Run local
-For starting application locally run next command line
+For starting application locally run next command line from /service_poller_kry/frontend
 npm start
 
 ## Run tests
