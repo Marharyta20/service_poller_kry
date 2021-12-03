@@ -1,7 +1,8 @@
 # Service poller
 
 ## Build
-For building application you should run next command line
+For building application you should run next command lines
+mvn clean install
 mvn spring-boot:run
 
 ## Run database
@@ -38,3 +39,4 @@ npm start
 
 ## Run tests
 For running unit tests you should run next command line
+mvn test
