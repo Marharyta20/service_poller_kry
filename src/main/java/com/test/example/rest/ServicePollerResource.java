@@ -44,13 +44,6 @@ public class ServicePollerResource {
         return ResponseEntity.created(new URI("/service/" + savedServiceEntity.getId())).body(savedServiceEntity);
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<?> updateService(@PathVariable Long id, @RequestBody ServiceRequest request) {
-        ServiceEntity currentServiceEntity = serviceRepository.findById(id).orElseThrow(RuntimeException::new);
-        ServiceEntity.builder().url(request.getUrl()).name(request.getName());
-        return ResponseEntity.ok(currentServiceEntity);
-    }
-
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteService(@PathVariable Long id) {
         serviceRepository.deleteById(id);
